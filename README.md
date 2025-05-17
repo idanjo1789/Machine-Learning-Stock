@@ -43,22 +43,39 @@ BYBIT_TESTNET=1            # set to 0 for mainnet
 Project Structure
 
 ├── data/                          # Local CSV files and processed datasets
+
 ├── models/                        # Saved model weights (e.g., model_BTC.pth)
+
 ├── notebooks/                     # Jupyter notebooks for each pipeline step
+
 │   ├── 1_Update_data.ipynb        # Download & combine candlestick data via Bybit API
+
 │   ├── 2_Deletes_incompatible_files.ipynb # Remove unsupported symbols or bad files
+
 │   ├── 3_Constructs_data_testing.ipynb    # Split data & prepare sliding-window indices
+
 │   ├── 4_Building_samples.ipynb           # Generate fixed-length input-output samples
+
 │   ├── 5_Fertile_transformations.ipynb    # Apply feature engineering (FFT, correlations)
+
 │   ├── 6_Builds_trains_model.ipynb        # Define and train ConvTCNModel
+
 │   ├── 7_Checking_the_model.ipynb         # Evaluate performance and visualize results
+
 ├── src/                            # Python modules
+
 │   ├── data_utils.py              # Data loading and preprocessing functions
+
 │   ├── model.py                   # ConvTCNModel and training loops
+
 │   └── train.py                   # Script wrapper for model training
+
 ├── .env                           # Environment variables (ignored by Git)
+
 ├── requirements.txt               # pip dependencies
+
 └── README.md                      # Project overview (this file)
+
 
 Workflow
 
