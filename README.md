@@ -1,6 +1,6 @@
 # Machine-Learning-Stock
 Machine Learning Stock
-שStock Price Prediction with Machine Learning
+Stock Price Prediction with Machine Learning
 
 Overview
 
